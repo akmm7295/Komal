@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: linear-gradient(135deg, #1a1a1a, #ff007f);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff007f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+button[type="submit"] {
+  font-size: 20px; /* Adjust the value as needed */
+}
+.footer {
+      margin-top: 10px;
+      color: ;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+      font-size: 20px;
+    }
+    .footer a {
+  text-decoration: none;
+  color: white
+}
+
+
+  </style>
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <h1>LOGIN</h1>
+    
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username 🫣" required>
+     
+      <input type="password" id="password" placeholder="Password 👀" required>
+      <br>
+      <button type="submit">Log In 🫠</button>
+      <br><br>
+      
+    <p class="footer"><a href="https://wa.me/919572939095?text=Hello%20%F0%9F%AB%A3%20Amrit%20">created by - Amrit Anand</a></p>
+    </form>
+  </div>
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Perform login validation here
+
+  // Example: For demonstration purposes only
+  if (username === "Komal" && password === "komal26") {
+    // Save a flag in localStorage to indicate successful login
+    localStorage.setItem("isLoggedIn", "true");
+
+    // Redirect to a.html
+    window.location.href = "a.html";
+  } else {
+    alert("Login failed");
+  }
+});
+  </script>
+</body>
+</html>
